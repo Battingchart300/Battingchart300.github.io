@@ -1,32 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Links — BattingChart300</title>
-<meta name="description" content="Profiles and demos by BattingChart300.">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links — BattingChart300</title>
+    <meta name="description" content="Find BattingChart300 — GitHub, Hugging Face, X and live demos." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="wrap">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="links.html" class="active">Links</a>
-  </nav>
+    <!-- HEADER (Contact active) -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="PTS Home">
+                <img src="pts-profile-1000.png" alt="PTS logo" class="logo-img" />
+                PTS
+            </a>
 
-  <h1>Links</h1>
-  <p class="lead">My profiles and live demos.</p>
+            <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+                <a href="index.html" data-nav>Home</a>
+                <a href="about.html" data-nav>About</a>
+                <a href="what-i-do.html" data-nav>What I Do</a>
+                <a href="projects.html" data-nav>Projects</a>
+                <a href="links.html" class="active" data-nav>Links</a>
+                <a href="https://github.com/Battingchart300" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm nav-cta">GitHub</a>
+            </nav>
 
-  <div class="btns">
-    <a href="https://github.com/Battingchart300"><b>GitHub</b><span>github.com/Battingchart300 — all code and projects</span></a>
-    <a href="https://huggingface.co/Battingchart300"><b>Hugging Face</b><span>huggingface.co/Battingchart300 — Spaces and profile</span></a>
-    <a href="https://x.com/BattingChart300"><b>X / Twitter</b><span>@BattingChart300</span></a>
-    <a href="https://huggingface.co/spaces/Battingchart300/jarvis-PTS-comporatione-demo"><b>JARVIS demo</b><span>Running Hugging Face Space — official J.A.R.V.I.S. demo</span></a>
-    <a href="https://huggingface.co/spaces/Battingchart300/python-data-cleaner"><b>Data Cleaner demo</b><span>Hugging Face Space</span></a>
-  </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-  <footer>BattingChart300 — portfolio, 2026. Plain HTML, no tracking.</footer>
-</div>
+    <!-- ═══════════ CONTACT PAGE ═══════════ -->
+    <section id="contact-page" class="contact-section" style="padding-top: calc(var(--header-height) + 40px);">
+        <div class="container">
+            <div class="contact-box reveal">
+                <span class="icon-big">👋</span>
+                <h2>Find me.</h2>
+                <p>
+                    My profiles and live demos — code, Spaces and datasets.
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 12px; align-items: center; margin-bottom: 24px;">
+                    <a href="https://github.com/Battingchart300" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="min-width: 240px;">GitHub — Battingchart300</a>
+                    <a href="https://huggingface.co/Battingchart300" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="min-width: 240px;">Hugging Face</a>
+                    <a href="https://x.com/BattingChart300" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="min-width: 240px;">X — @BattingChart300</a>
+                </div>
+                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <a href="https://huggingface.co/spaces/Battingchart300/jarvis-PTS-comporatione-demo" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); font-size:0.9rem; transition: color var(--transition);">JARVIS demo</a>
+                    <a href="https://huggingface.co/spaces/Battingchart300/python-data-cleaner" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); font-size:0.9rem; transition: color var(--transition);">Data Cleaner demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">PTS <span>✦</span></div>
+                    <div class="full-name">BattingChart300 — Portfolio</div>
+                    <div class="tagline">Python. Docker. Local AI.</div>
+                </div>
+                <div class="footer-col">
+                    <h5>Navigate</h5>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="what-i-do.html">What I Do</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="links.html">Links</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Connect</h5>
+                    <a href="https://github.com/Battingchart300" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://huggingface.co/Battingchart300" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+                    <a href="https://x.com/BattingChart300" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Demos</h5>
+                    <a href="https://huggingface.co/spaces/Battingchart300/jarvis-PTS-comporatione-demo" target="_blank" rel="noopener noreferrer">JARVIS demo</a>
+                    <a href="https://huggingface.co/spaces/Battingchart300/python-data-cleaner" target="_blank" rel="noopener noreferrer">Data Cleaner demo</a>
+                    <a href="https://huggingface.co/datasets/Battingchart300/python-bug-fixes" target="_blank" rel="noopener noreferrer">python-bug-fixes dataset</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 BattingChart300 — portfolio. Plain HTML, no tracking.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

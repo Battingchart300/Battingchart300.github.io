@@ -1,50 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects — BattingChart300</title>
-<meta name="description" content="Open-source projects by BattingChart300.">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — BattingChart300</title>
+    <meta name="description" content="Open-source projects by BattingChart300." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="wrap">
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html" class="active">Projects</a>
-    <a href="links.html">Links</a>
-  </nav>
+    <!-- HEADER (Projects active) -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="PTS Home">
+                <img src="pts-profile-1000.png" alt="PTS logo" class="logo-img" />
+                PTS
+            </a>
 
-  <h1>Projects</h1>
-  <p class="lead">Open-source tools. Every project has a short README, a license, and code that runs from its instructions.</p>
+            <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+                <a href="index.html" data-nav>Home</a>
+                <a href="about.html" data-nav>About</a>
+                <a href="what-i-do.html" data-nav>What I Do</a>
+                <a href="projects.html" class="active" data-nav>Projects</a>
+                <a href="links.html" data-nav>Links</a>
+                <a href="https://github.com/Battingchart300" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm nav-cta">GitHub</a>
+            </nav>
 
-  <div class="card">
-    <h3><a href="https://github.com/Battingchart300/CONVERTOR-APP">CONVERTOR-APP</a></h3>
-    <p>Local desktop file converter for Windows — images, PDF, Word, Excel, PowerPoint, text and LibreOffice files. No upload, no account, everything runs locally.</p>
-    <div class="topics"><span>python</span><span>pyside6</span><span>file-converter</span><span>desktop-app</span><span>pdf-converter</span><span>local-first</span></div>
-  </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-  <div class="card">
-    <h3><a href="https://github.com/Battingchart300/python-data-cleaner">python-data-cleaner</a></h3>
-    <p>Python tool that cleans messy CSV and Excel files — removes duplicates, fixes dates and empty values, in one command.</p>
-    <div class="topics"><span>python</span><span>data-cleaning</span><span>pandas</span><span>csv</span><span>excel</span><span>cli</span></div>
-    <p class="note">Web demo: <a href="https://huggingface.co/spaces/Battingchart300/python-data-cleaner">Hugging Face Space</a>.</p>
-  </div>
+    <!-- ═══════════ PROJECTS PAGE ═══════════ -->
+    <section id="projects-full" style="padding-top: calc(var(--header-height) + 40px);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Projects</span>
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-sub">
+                    Open-source tools. Every project has a short README, a license, and code that runs from its instructions.
+                </p>
+            </div>
 
-  <div class="card">
-    <h3><a href="https://github.com/Battingchart300/dockerize-python-app">dockerize-python-app</a></h3>
-    <p>Dockerize any Python app in minutes — Dockerfile, compose setup and a 3-step guide to run it anywhere.</p>
-    <div class="topics"><span>python</span><span>docker</span><span>dockerfile</span><span>docker-compose</span><span>flask</span></div>
-  </div>
+            <div class="projects-page-grid">
+                <div class="project-card reveal reveal-delay-1">
+                    <span class="badge dev">v0.8.0</span>
+                    <h3>CONVERTOR-APP</h3>
+                    <div class="project-category">Python · PySide6 · Desktop App</div>
+                    <p>
+                        Local desktop file converter for Windows — images, PDF, Word, Excel,
+                        PowerPoint, text and LibreOffice files. No upload, no account,
+                        everything runs locally.
+                    </p>
+                    <a href="https://github.com/Battingchart300/CONVERTOR-APP" target="_blank" rel="noopener noreferrer" class="btn btn-outline-accent btn-sm">GitHub →</a>
+                </div>
+                <div class="project-card reveal reveal-delay-2">
+                    <span class="badge">Live Demo</span>
+                    <h3>python-data-cleaner</h3>
+                    <div class="project-category">Python · Pandas · CLI</div>
+                    <p>
+                        Python tool that cleans messy CSV and Excel files — removes duplicates,
+                        fixes dates and empty values, in one command.
+                    </p>
+                    <a href="https://github.com/Battingchart300/python-data-cleaner" target="_blank" rel="noopener noreferrer" class="btn btn-outline-accent btn-sm">GitHub →</a>
+                    <a href="https://huggingface.co/spaces/Battingchart300/python-data-cleaner" target="_blank" rel="noopener noreferrer" class="btn btn-outline-accent btn-sm">Live Demo →</a>
+                </div>
+                <div class="project-card reveal reveal-delay-3">
+                    <span class="badge">Open Source</span>
+                    <h3>dockerize-python-app</h3>
+                    <div class="project-category">Python · Docker · Flask</div>
+                    <p>
+                        Dockerize any Python app in minutes — Dockerfile, compose setup
+                        and a 3-step guide to run it anywhere.
+                    </p>
+                    <a href="https://github.com/Battingchart300/dockerize-python-app" target="_blank" rel="noopener noreferrer" class="btn btn-outline-accent btn-sm">GitHub →</a>
+                </div>
+                <div class="project-card reveal reveal-delay-4">
+                    <span class="badge">Dataset</span>
+                    <h3>python-bug-fixes</h3>
+                    <div class="project-category">Python · Debugging · Hugging Face</div>
+                    <p>
+                        Common Python bugs fixed and explained as a dataset — broken code,
+                        fixed code, what went wrong and the fix, for 3 classic bugs.
+                    </p>
+                    <a href="https://github.com/Battingchart300/python-bug-fixes" target="_blank" rel="noopener noreferrer" class="btn btn-outline-accent btn-sm">GitHub →</a>
+                    <a href="https://huggingface.co/datasets/Battingchart300/python-bug-fixes" target="_blank" rel="noopener noreferrer" class="btn btn-outline-accent btn-sm">Dataset →</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="card">
-    <h3><a href="https://huggingface.co/datasets/Battingchart300/python-bug-fixes">python-bug-fixes</a></h3>
-    <p>Common Python bugs fixed and explained as a dataset — broken code, fixed code, what went wrong and the fix, for 3 classic bugs.</p>
-    <div class="topics"><span>python</span><span>dataset</span><span>debugging</span><span>hugging-face</span></div>
-    <p class="note">Dataset on <a href="https://huggingface.co/datasets/Battingchart300/python-bug-fixes">Hugging Face</a>. Source code: <a href="https://github.com/Battingchart300/python-bug-fixes">GitHub repo</a>.</p>
-  </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">PTS <span>✦</span></div>
+                    <div class="full-name">BattingChart300 — Portfolio</div>
+                    <div class="tagline">Python. Docker. Local AI.</div>
+                </div>
+                <div class="footer-col">
+                    <h5>Navigate</h5>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="what-i-do.html">What I Do</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="links.html">Links</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Connect</h5>
+                    <a href="https://github.com/Battingchart300" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://huggingface.co/Battingchart300" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+                    <a href="https://x.com/BattingChart300" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Demos</h5>
+                    <a href="https://huggingface.co/spaces/Battingchart300/jarvis-PTS-comporatione-demo" target="_blank" rel="noopener noreferrer">JARVIS demo</a>
+                    <a href="https://huggingface.co/spaces/Battingchart300/python-data-cleaner" target="_blank" rel="noopener noreferrer">Data Cleaner demo</a>
+                    <a href="https://huggingface.co/datasets/Battingchart300/python-bug-fixes" target="_blank" rel="noopener noreferrer">python-bug-fixes dataset</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 BattingChart300 — portfolio. Plain HTML, no tracking.</span>
+            </div>
+        </div>
+    </footer>
 
-  <footer>BattingChart300 — portfolio, 2026. Plain HTML, no tracking.</footer>
-</div>
+    <script src="script.js"></script>
 </body>
 </html>

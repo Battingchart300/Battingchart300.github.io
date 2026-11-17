@@ -1,7 +1,13 @@
 # BattingChart300 — Portfolio
 
-My portfolio website, hosted with GitHub Pages.
+Personal portfolio site — PTS design, plain HTML/CSS/JS, no tracking.
 
-Live site: https://battingchart300.github.io/
+- Home: `index.html`
+- About: `about.html`
+- What I Do: `what-i-do.html`
+- Projects: `projects.html`
+- Links: `links.html`
 
-Plain HTML + CSS, no tracking. Pages: Home, Projects, Links.
+Live: https://battingchart300.github.io/
+
+Logo: `pts-profile-1000.png` (PTS + BattingChart300 profile picture).

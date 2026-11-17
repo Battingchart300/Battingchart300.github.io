@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What I Do — BattingChart300</title>
+    <meta name="description" content="What BattingChart300 does — Python, Docker, automation and local AI." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="pts-profile-1000.png" />
+</head>
+<body>
+    <!-- HEADER (What I Do active) -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="PTS Home">
+                <img src="pts-profile-1000.png" alt="PTS logo" class="logo-img" />
+                PTS
+            </a>
+
+            <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+                <a href="index.html" data-nav>Home</a>
+                <a href="about.html" data-nav>About</a>
+                <a href="what-i-do.html" class="active" data-nav>What I Do</a>
+                <a href="projects.html" data-nav>Projects</a>
+                <a href="links.html" data-nav>Links</a>
+                <a href="https://github.com/Battingchart300" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm nav-cta">GitHub</a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════ WHAT I DO ═══════════ -->
+    <section class="bg-elevated" id="what-we-do" style="padding-top: calc(var(--header-height) + 40px);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">What I Do</span>
+                <h2 class="section-title">Python tools that run locally.</h2>
+                <div class="section-divider"></div>
+                <p class="section-sub">
+                    Python tools that run locally, Docker setups and small automations.
+                    Everything in my portfolio is open source.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal reveal-delay-1">
+                    <span class="icon">🐍</span>
+                    <h3>Python</h3>
+                    <p>Local tools and automations — file converters, data cleaning, scripts that do real work.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <span class="icon">🐳</span>
+                    <h3>Docker</h3>
+                    <p>Dockerfiles and compose setups that run any Python app anywhere, in minutes.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <span class="icon">🔄</span>
+                    <h3>Automation</h3>
+                    <p>Small automations and workflows — file renaming, backups, reports, n8n.</p>
+                </div>
+                <div class="service-card reveal reveal-delay-4">
+                    <span class="icon">🧠</span>
+                    <h3>Local AI</h3>
+                    <p>My own assistant JARVIS and Hugging Face demos — AI that runs locally, no cloud needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">PTS <span>✦</span></div>
+                    <div class="full-name">BattingChart300 — Portfolio</div>
+                    <div class="tagline">Python. Docker. Local AI.</div>
+                </div>
+                <div class="footer-col">
+                    <h5>Navigate</h5>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="what-i-do.html">What I Do</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="links.html">Links</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Connect</h5>
+                    <a href="https://github.com/Battingchart300" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://huggingface.co/Battingchart300" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+                    <a href="https://x.com/BattingChart300" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Demos</h5>
+                    <a href="https://huggingface.co/spaces/Battingchart300/jarvis-PTS-comporatione-demo" target="_blank" rel="noopener noreferrer">JARVIS demo</a>
+                    <a href="https://huggingface.co/spaces/Battingchart300/python-data-cleaner" target="_blank" rel="noopener noreferrer">Data Cleaner demo</a>
+                    <a href="https://huggingface.co/datasets/Battingchart300/python-bug-fixes" target="_blank" rel="noopener noreferrer">python-bug-fixes dataset</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 BattingChart300 — portfolio. Plain HTML, no tracking.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

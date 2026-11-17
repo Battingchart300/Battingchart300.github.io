@@ -1,34 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BattingChart300 — Portfolio</title>
-<meta name="description" content="Portfolio of BattingChart300 — 16-year-old student from Slovakia building with Python, Docker and local AI.">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BattingChart300 — Portfolio</title>
+    <meta name="description" content="Portfolio of BattingChart300 — 16-year-old student from Slovakia building with Python, Docker and local AI." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="wrap">
-  <nav>
-    <a href="index.html" class="active">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="links.html">Links</a>
-  </nav>
+    <!-- ═══════════ HEADER ═══════════ -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo" aria-label="PTS Home">
+                <img src="pts-profile-1000.png" alt="PTS logo" class="logo-img" />
+                PTS
+            </a>
 
-  <h1>BattingChart300</h1>
-  <p class="lead">16-year-old student from Slovakia building with Python, Docker and local AI. Working on my own assistant (JARVIS) and small tools that run locally.</p>
+            <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+                <a href="index.html" class="active" data-nav>Home</a>
+                <a href="about.html" data-nav>About</a>
+                <a href="what-i-do.html" data-nav>What I Do</a>
+                <a href="projects.html" data-nav>Projects</a>
+                <a href="links.html" data-nav>Links</a>
+                <a href="https://github.com/Battingchart300" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm nav-cta">GitHub</a>
+            </nav>
 
-  <h2>Find me</h2>
-  <div class="btns">
-    <a href="https://github.com/Battingchart300"><b>GitHub</b><span>github.com/Battingchart300 — code, repos and projects</span></a>
-    <a href="https://huggingface.co/Battingchart300"><b>Hugging Face</b><span>huggingface.co/Battingchart300 — Spaces and demos</span></a>
-    <a href="https://x.com/BattingChart300"><b>X / Twitter</b><span>@BattingChart300</span></a>
-  </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-  <h2>What I do</h2>
-  <p class="lead">Python tools that run locally, Docker setups and small automations. Everything in my portfolio is open source — see the <a href="projects.html" style="color: var(--accent);">Projects</a> page.</p>
+    <!-- ═══════════ HOME / HERO ═══════════ -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <h1>
+                    BattingChart300<br />
+                    <span class="highlight">Python. Docker.</span> Local AI.
+                </h1>
+                <p>
+                    16-year-old student from Slovakia building with Python, Docker and
+                    local AI. Working on my own assistant (JARVIS) and small tools that
+                    run locally.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">Explore Projects</a>
+                    <a href="https://github.com/Battingchart300" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                </div>
+            </div>
 
-  <footer>BattingChart300 — portfolio, 2026. Plain HTML, no tracking.</footer>
-</div>
+            <div class="hero-visual reveal reveal-delay-1">
+                <img src="pts-profile-1000.png" alt="PTS — BattingChart300 profile picture" class="hero-logo" />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════ WHY THIS PORTFOLIO ═══════════ -->
+    <section class="bg-elevated" id="why-pts">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-label">Why This Portfolio</span>
+                <h2 class="section-title">Built with purpose.</h2>
+                <div class="section-divider mx-auto"></div>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-item reveal reveal-delay-1">
+                    <span class="num">01</span>
+                    <h4>Practical</h4>
+                    <p>Tools designed for real-world use, not demos.</p>
+                </div>
+                <div class="value-item reveal reveal-delay-2">
+                    <span class="num">02</span>
+                    <h4>Open Source</h4>
+                    <p>Every project has a README, a license, and code that runs.</p>
+                </div>
+                <div class="value-item reveal reveal-delay-3">
+                    <span class="num">03</span>
+                    <h4>Local-first</h4>
+                    <p>No upload, no account — everything runs on your machine.</p>
+                </div>
+                <div class="value-item reveal reveal-delay-4">
+                    <span class="num">04</span>
+                    <h4>Reliable</h4>
+                    <p>Focus on stability, quality and long-term usability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CTA ═══════════ -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-inner reveal">
+                <h2>Want to see the code?</h2>
+                <p>Every project is open source — browse the repos and try the tools yourself.</p>
+                <a href="https://github.com/Battingchart300" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub — Battingchart300</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">PTS <span>✦</span></div>
+                    <div class="full-name">BattingChart300 — Portfolio</div>
+                    <div class="tagline">Python. Docker. Local AI.</div>
+                </div>
+                <div class="footer-col">
+                    <h5>Navigate</h5>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="what-i-do.html">What I Do</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="links.html">Links</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Connect</h5>
+                    <a href="https://github.com/Battingchart300" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://huggingface.co/Battingchart300" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+                    <a href="https://x.com/BattingChart300" target="_blank" rel="noopener noreferrer">X / Twitter</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Demos</h5>
+                    <a href="https://huggingface.co/spaces/Battingchart300/jarvis-PTS-comporatione-demo" target="_blank" rel="noopener noreferrer">JARVIS demo</a>
+                    <a href="https://huggingface.co/spaces/Battingchart300/python-data-cleaner" target="_blank" rel="noopener noreferrer">Data Cleaner demo</a>
+                    <a href="https://huggingface.co/datasets/Battingchart300/python-bug-fixes" target="_blank" rel="noopener noreferrer">python-bug-fixes dataset</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 BattingChart300 — portfolio. Plain HTML, no tracking.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
