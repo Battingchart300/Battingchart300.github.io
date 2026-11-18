@@ -24,6 +24,7 @@
     --radius-lg: 20px;
     --transition: 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
     --max-width: 1200px;
     --header-height: 72px;
 }
@@ -342,7 +343,7 @@ img {
 }
 
 .hero-content h1 {
-    font-size: clamp(2.6rem, 6vw, 4.4rem);
+    font-size: clamp(2.8rem, 7vw, 5rem);
     font-weight: 800;
     line-height: 1.05;
     letter-spacing: -0.03em;
@@ -350,6 +351,8 @@ img {
 }
 .hero-content h1 .highlight {
     color: var(--accent);
+    font-family: var(--font-mono);
+    letter-spacing: -0.01em;
 }
 .hero-content p {
     font-size: 1.15rem;
@@ -1158,4 +1161,22 @@ section {
     .stat-num {
         font-size: 1.5rem;
     }
+}
+
+/* ───────────── TECH TAGS ───────────── */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+.tech-tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 4px 12px;
+    border-radius: 50px;
+    background: rgba(74, 158, 255, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(74, 158, 255, 0.2);
 }
