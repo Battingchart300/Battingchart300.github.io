@@ -1055,3 +1055,107 @@ section {
         max-width: 260px;
     }
 }
+
+/* ───────────── GITHUB STATS ───────────── */
+.stats-section {
+    padding: 40px 0;
+    border-top: 1px solid var(--border-subtle);
+}
+.stats-strip {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius);
+    padding: 24px 32px;
+    cursor: pointer;
+    font-family: var(--font);
+    color: var(--text-primary);
+    transition: border-color var(--transition), background var(--transition);
+}
+.stats-strip:hover {
+    border-color: rgba(74, 158, 255, 0.35);
+    background: var(--bg-card-hover);
+}
+.stats-strip .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+.stat-num {
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+.stats-expand {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--accent);
+    white-space: nowrap;
+}
+.stats-table-wrap {
+    margin-top: 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius);
+    overflow-x: auto;
+}
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+}
+.stats-table th,
+.stats-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-subtle);
+    white-space: nowrap;
+}
+.stats-table th {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+}
+.stats-table tbody tr:last-child td {
+    border-bottom: none;
+}
+.stats-table tbody tr {
+    transition: background var(--transition);
+}
+.stats-table tbody tr:hover {
+    background: var(--bg-card-hover);
+}
+.stats-table td a {
+    font-weight: 600;
+}
+.stats-note {
+    padding: 14px 20px;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-subtle);
+}
+.stats-note a {
+    color: var(--accent);
+}
+@media (max-width: 600px) {
+    .stats-strip {
+        padding: 20px;
+    }
+    .stat-num {
+        font-size: 1.5rem;
+    }
+}
