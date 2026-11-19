@@ -1046,9 +1046,9 @@ section {
     flex-shrink: 0;
 }
 .hero-logo {
-    width: 100%;
-    max-width: 340px;
-    border-radius: 24px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
 }
 .team-card .avatar-img {
     width: 72px;
