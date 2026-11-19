@@ -84,4 +84,15 @@
             .catch(function() { /* keep baked-in fallback numbers */ });
     }
 
+    // ─── HUGGING FACE STATS (live) ───
+    const setHfNum = function(id, v) { const el = document.getElementById(id); if (el) el.textContent = v; };
+    fetch('https://huggingface.co/api/spaces?author=Battingchart300')
+        .then(function(r) { if (!r.ok) throw new Error('HF API ' + r.status); return r.json(); })
+        .then(function(spaces) { setHfNum('stat-spaces', spaces.length); })
+        .catch(function() { /* keep baked-in fallback number */ });
+    fetch('https://huggingface.co/api/datasets?author=Battingchart300')
+        .then(function(r) { if (!r.ok) throw new Error('HF API ' + r.status); return r.json(); })
+        .then(function(datasets) { setHfNum('stat-datasets', datasets.length); })
+        .catch(function() { /* keep baked-in fallback number */ });
+
 })();
