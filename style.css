@@ -1155,6 +1155,21 @@ section {
     color: var(--accent);
     border: 1px solid rgba(74, 158, 255, 0.2);
 }
+/* Skills strip (Home) */
+#skills {
+    padding: 28px 0 8px;
+}
+.skills-strip {
+    text-align: center;
+}
+.skills-strip .section-label {
+    display: block;
+    margin-bottom: 16px;
+}
+.skills-tags {
+    justify-content: center;
+    margin-bottom: 0;
+}
 .project-for {
     font-size: 0.92rem;
     color: var(--text-muted);
