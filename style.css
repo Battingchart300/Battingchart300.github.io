@@ -245,7 +245,7 @@ h2 {
 }
 .nav a {
     font-size: 0.88rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--text-secondary);
     transition: color var(--transition);
     position: relative;
@@ -492,6 +492,12 @@ section {
     margin-bottom: 16px;
     display: block;
 }
+.service-card .service-logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+    display: block;
+}
 .service-card h3 {
     font-size: 1.1rem;
     font-weight: 600;
@@ -654,30 +660,6 @@ section {
     line-height: 1.8;
     margin-bottom: 16px;
 }
-
-.about-values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 16px;
-    margin-top: 12px;
-}
-.about-value {
-    background: var(--bg-card);
-    border-radius: var(--radius);
-    padding: 18px 20px;
-    border: 1px solid var(--border-subtle);
-    text-align: center;
-}
-.about-value h5 {
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-.about-value p {
-    font-size: 0.8rem;
-    color: var(--text-secondary);
-    margin-top: 4px;
-}
-
 .team-placeholder {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -993,9 +975,6 @@ section {
     .service-detail-grid {
         grid-template-columns: 1fr;
     }
-    .about-values-grid {
-        grid-template-columns: 1fr 1fr;
-    }
     .team-placeholder {
         grid-template-columns: 1fr;
     }
@@ -1008,8 +987,8 @@ section {
     flex-shrink: 0;
 }
 .hero-logo {
-    width: 56px;
-    height: 56px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
 }
 .team-card .avatar-img {
@@ -1110,12 +1089,6 @@ section {
 }
 .stats-table tbody tr:last-child td {
     border-bottom: none;
-}
-.stats-table tbody tr {
-    transition: background var(--transition);
-}
-.stats-table tbody tr:hover {
-    background: var(--bg-card-hover);
 }
 .stats-table td a {
     font-weight: 600;
