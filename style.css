@@ -1148,3 +1148,8 @@ section {
     color: var(--text-muted);
     margin-bottom: 12px;
 }
+.project-date {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
