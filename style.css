@@ -1153,3 +1153,78 @@ section {
     color: var(--text-muted);
     margin-bottom: 12px;
 }
+
+/* ───────────── NOW BOX (Home, #2) ───────────── */
+.now-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius);
+    padding: 28px 32px;
+    display: grid;
+    gap: 18px;
+}
+.now-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 8px 20px;
+}
+.now-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-top: 3px;
+}
+.now-row p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+@media (max-width: 600px) {
+    .now-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ───────────── WHAT'S NEW (Home, #5) ───────────── */
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 14px;
+}
+.news-list li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    align-items: baseline;
+}
+.news-date {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--accent);
+    white-space: nowrap;
+}
+.news-list p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ───────────── TOPIC CROSSROADS (What I Do, #20) ───────────── */
+.topics-crossroads {
+    margin-top: 40px;
+}
+.topics-crossroads .section-label {
+    display: block;
+    margin-bottom: 16px;
+}
+.topics-tags a.tech-tag {
+    text-decoration: none;
+    transition: background var(--transition);
+}
+.topics-tags a.tech-tag:hover {
+    background: rgba(74, 158, 255, 0.2);
+}
